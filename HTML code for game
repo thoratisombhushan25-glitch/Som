@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mystery Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>The Mystery Grid</h1>
+        <div class="header">
+            <div class="team-info">Team: <span id="teamName"></span></div>
+            <div class="timer">Time Left: <span id="timeLeft">03:00</span></div>
+            <div class="score">Score: <span id="currentScore">0</span></div>
+        </div>
+
+        <div id="gameGrid" class="grid-container">
+            </div>
+
+        <div class="challenge-area">
+            <p id="challengeText"></p>
+            <input type="text" id="answerInput" placeholder="Type your answer here">
+            <button id="submitAnswer">Submit</button>
+            <p id="feedbackMessage"></p>
+        </div>
+
+        <button id="startGame">Start Game</button>
+        <div id="gameOverScreen" style="display:none;">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore"></span></p>
+            <button id="restartGame">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
